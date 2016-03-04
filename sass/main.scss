@@ -1,5 +1,32 @@
-h2{
+header{
+	margin: 20px;
 	padding-left: 20px;
 	font-size: 20px;
 }
-	
+
+banner {
+	width: 200px;
+	border: 1px solid red;
+}	
+
+.answers {
+	text-align: center;
+	margin-top: 0;
+	background: #e0dfe1;
+}
+
+.answers ul {
+	list-style-type: none;
+}
+.answers li {
+	border: 1px solid gray;
+	padding: 45px;
+	font-size: 25px;
+}
+footer {
+	text-align: center;
+	color: #BAB4C0;
+	background: #41424e;
+	padding-top: 35px;
+	padding-bottom:10px;
+}

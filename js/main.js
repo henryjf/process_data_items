@@ -1,8 +1,3 @@
-
-
-
-
-
 // Problem 1
 var prices = items.map(function(obj){
   return obj.price;
@@ -10,7 +5,7 @@ var prices = items.map(function(obj){
 var sumPrices = prices.reduce(function(prev, next){
   return prev + next;
 });
-var avgPrice = sumPrices / items.length;
+var avgPrice = (sumPrices / items.length).toFixed(2);
 //numAvgPrice.toFixed(avgPrice);
 
 // Want to round avgPrice
@@ -61,15 +56,15 @@ console.log(str);
 // link materials lists to title list
 // print out materials list
 
-// var woodItems = items.indexOf(function(currentItem) {
-//  return currentItem.materials.wood;
-//   })
+var woodItems = items.filter(function(currentItem) {
+ return currentItem.materials === "wood";
+  })
 
-// var pine = woodItems.map(function(item) {
-//   return item.title;
-//     })
+var woodProduct = woodItems.indexOf(function(item) {
+  return item.wood;
+    })
 
-// console.log(pine); 
+console.log(woodProduct); 
 
 // Problem 5
 // Which items are made of eight or more materials?
@@ -85,8 +80,6 @@ var numMater = items.filter(function(item){
   //
   console.log(titles);
 
-
-
 // Problem 6
 // How many items were made by their sellers?
 
@@ -101,71 +94,3 @@ var made = selfMade.map(function(item){
 var str = made.length + " were made by their sellers";
 
 console.log(str);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// var woodItems = items.filter(function(obj){
-// return obj.materials.wood === "wood";
-// })
-
-// var madeOfWood = woodItems.map(function(item){
-//   return item.title;
-      
-// })
-
- //console.log(woodItems);
-
-// var woodItems = items.filter(function(obj) {
-//     if (obj.materials === "wood") {
-//         return obj.title;
-//     }});
-
-// console.log(obj);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

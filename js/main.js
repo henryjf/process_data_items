@@ -25,20 +25,28 @@ console.log(str);
 //   return obj.price;
 // })
 var midPriceProducts = items.filter(function(item){
-return item.price >14 && item.price < 18;
+return item.price > 14 && item.price < 18;
 })
 
 var titles = midPriceProducts.map(function(obj){
 
   return obj.title
 })
+
+console.log(titles);
+
+
+
 // Problem 3
 //Which item has a "GBP" currency code? Display it's name and price.
 
+//filter items to get GBP currency 
+var britishItem = items.filter(function(currency){
+  return currency.currencyCode;
+})
 
 
-
-
+console.log(GBP);
 
 
 

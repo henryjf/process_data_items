@@ -25,8 +25,22 @@ img {
   margin: 0px; }
 
 .answers li {
-  padding-top: 75px;
-  padding-bottom: 20px; }
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: relative; }
+
+.answers li span {
+  position: relative;
+  z-index: 0; }
+
+.answers li:before {
+  background: #ddd;
+  content: "";
+  display: block;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  width: 100%; }
 
 footer {
   text-align: center;

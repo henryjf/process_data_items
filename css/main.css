@@ -11,13 +11,15 @@ img {
 .answers {
   text-align: center;
   margin-top: 0;
-  padding-bottom: 15px;
+  padding-bottom: 20px;
   background: #f0eff1; }
 
 .answers span {
   font-size: 24px;
   font-family: 'PT Serif', serif;
   font-weight: normal;
+  padding-left: 5px;
+  padding-right: 5px;
   color: #61626e; }
 
 .answers ul {
@@ -25,22 +27,16 @@ img {
   margin: 0px; }
 
 .answers li {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  position: relative; }
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  line-height: 0;
+  padding-top: 120px;
+  position: relative;
+  bottom: 50px; }
 
 .answers li span {
-  position: relative;
-  z-index: 0; }
-
-.answers li:before {
-  background: #ddd;
-  content: "";
-  display: block;
-  height: 1px;
-  position: absolute;
-  top: 50%;
-  width: 100%; }
+  background-color: #f0eff1;
+  padding: 0 15px; }
 
 footer {
   text-align: center;

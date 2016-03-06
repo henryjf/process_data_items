@@ -70,14 +70,12 @@ answer3.innerHTML = str;
 // link materials lists to title list
 // print out materials list
 
-var woodItems = items.filter(function(currentItem) {
- return currentItem.materials.wood;
+var woodItems = items.filter(function(item) {
+ return items.materials;
   })
 
-var woodProduct = woodItems.indexOf(function(item){
-  return item.materials.wood;
-})
-  
+var woodProduct = woodItems.indexOf("wood");
+ 
 var answer4 = document.querySelector(".answer4")
 answer4.innerHTML = woodProduct;
 

@@ -8,13 +8,12 @@ header{
 img {
 	width:1200px;
 	margin-bottom: 0px;
-
 }	
 
 .answers {
 	text-align: center;
 	margin-top: 0;
-	padding-bottom:15px;
+	padding-bottom:20px;
 	background: #f0eff1;
 }
 
@@ -22,9 +21,9 @@ img {
 	font-size: 24px;
 	font-family: 'PT Serif', serif;
 	font-weight: normal;
+	padding-left: 5px;
+	padding-right: 5px;
 	color: #61626e;
-	// margin-right: 100px;
-	// margin-left: 100px;
 }
 
 .answers ul {
@@ -32,26 +31,42 @@ img {
 	margin: 0px;
 }
 
+// .answers li {
+// 	padding-top: 50px;
+// 	padding-bottom: 50px;
+// 	position: relative;
+// }
+
+// .answers li span {
+// 	background-color: #f0eff1;
+//     position: relative;
+//   	z-index: 0;
+//   }
+
+
+// .answers li:before {
+//    	background: #ddd;
+//   	content: "";
+//   	display: block;
+//   	height: 1px;
+//   	position: absolute;
+//     top: 50%;
+//  	width: 100%;
+//  }
+
 .answers li {
-	padding-top: 50px;
-	padding-bottom: 50px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    line-height: 0;
+    padding-top: 120px;
+	// padding-bottom: 50px;
 	position: relative;
- //  	text-align: center;
+	bottom: 50px;
 }
 
 .answers li span {
-    position: relative;
-  	z-index: 0;
-}
-
-.answers li:before {
-   	background: #ddd;
-  	content: "";
-  	display: block;
-  	height: 1px;
-  	position: absolute;
-    top: 50%;
- 	width: 100%;
+    background-color: #f0eff1;
+    padding: 0 15px;
 }
 
 footer {

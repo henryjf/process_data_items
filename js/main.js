@@ -1,4 +1,11 @@
-// Problem 1
+// Problem 1 
+//Show me how to calculate the average price of all items.
+
+//get all prices
+// add them 
+//divide them by number of prices
+// print answer
+
 var prices = items.map(function(obj){
   return obj.price;
 });
@@ -16,6 +23,7 @@ var str ="The average price is $" + avgPrice + ".";
   answer1.innerHTML = str;
 
 // Problem 2
+//Show me how to get an array of items that cost between $14.00 and $18.00 USD
 
 //get all prices
 //find prices btw 14 and 18;
@@ -83,10 +91,11 @@ var numMater = items.filter(function(item){
 
 var titles =numMater.map(function(obj){
   return obj.title;
-})  
-  //console.log(titles);
+}) 
+
 var answer5 = document.querySelector(".answer5")
 answer5.innerHTML = titles;
+
 // Problem 6
 // How many items were made by their sellers?
 
@@ -99,6 +108,6 @@ var made = selfMade.map(function(item){
 })
 
 var str = made.length + " were made by their sellers";
-//console.log(str);
+
 var answer6 = document.querySelector(".answer6")
 answer6.innerHTML = str;

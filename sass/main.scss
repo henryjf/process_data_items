@@ -2,27 +2,40 @@ header{
 	margin: 20px;
 	padding-left: 20px;
 	font-size: 20px;
+	color: #61626e;
 }
 
 img {
-	border: 1px solid red;
 	width:1200px;
+	margin-bottom: 0px;
+
 }	
 
 .answers {
 	text-align: center;
 	margin-top: 0;
-	background: #e0dfe1;
+	padding-bottom:15px;
+	background: #f0eff1;
+}
+
+.answers span{
+	font-size: 24px;
+	font-family: 'PT Serif', serif;
+	font-weight: normal;
+	color: #61626e;
 }
 
 .answers ul {
 	list-style-type: none;
+	margin: 0px;
 }
+
 .answers li {
-	border: 1px solid gray;
-	padding: 45px;
-	font-size: 25px;
+	padding-top: 75px;
+	padding-bottom: 20px;
+
 }
+
 footer {
 	text-align: center;
 	color: #BAB4C0;

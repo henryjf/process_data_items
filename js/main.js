@@ -17,7 +17,6 @@ var avgPrice = (sumPrices / items.length).toFixed(2);
 
 // Want to round avgPrice
 var str ="The average price is $" + avgPrice + ".";
-// console.log(str);
 
   var answer1 = document.querySelector(".answer1")
   answer1.innerHTML = str;

@@ -10,14 +10,18 @@ var avgPrice = (sumPrices / items.length).toFixed(2);
 
 // Want to round avgPrice
 var str ="The average price is $" + avgPrice + ".";
-console.log(str);
+// console.log(str);
+
+  var answer1 = document.querySelector(".answer1")
+  answer1.innerHTML = str;
 
 // Problem 2
 
 //get all prices
-// var prices = items.map(function(obj){
-//   return obj.price;
-// })
+//find prices btw 14 and 18;
+//link prices btw 14 and 18 to their titles;
+//print titles
+
 var midPriceProducts = items.filter(function(item){
 return item.price > 14 && item.price < 18;
 })
@@ -26,7 +30,8 @@ var titles = midPriceProducts.map(function(obj){
   return obj.title
 })
 
-console.log(titles);
+var answer2 = document.querySelector(".answer2")
+answer2.innerHTML = titles;
 
 // Problem 3
 //Which item has a "GBP" currency code? Display it's name and price.
@@ -46,7 +51,8 @@ var currency = britishItem.map(function(item){
 
 var str = currency + " costs £18";
 
-console.log(str);
+var answer3 = document.querySelector(".answer3")
+answer3.innerHTML = str;
 
 //Problem 4
 //Display a list of all items who are made of wood.
@@ -57,14 +63,15 @@ console.log(str);
 // print out materials list
 
 var woodItems = items.filter(function(currentItem) {
- return currentItem.materials === "wood";
+ return currentItem.materials.wood;
   })
 
-var woodProduct = woodItems.indexOf(function(item) {
-  return item.wood;
-    })
-
-console.log(woodProduct); 
+var woodProduct = woodItems.indexOf(function(item){
+  return item.materials.wood;
+})
+  
+var answer4 = document.querySelector(".answer4")
+answer4.innerHTML = woodProduct;
 
 // Problem 5
 // Which items are made of eight or more materials?
@@ -74,12 +81,12 @@ var numMater = items.filter(function(item){
   return item.materials.length >= 8;
 })
 
-  var titles =numMater.map(function(obj){
+var titles =numMater.map(function(obj){
   return obj.title;
-})
-  //
-  console.log(titles);
-
+})  
+  //console.log(titles);
+var answer5 = document.querySelector(".answer5")
+answer5.innerHTML = titles;
 // Problem 6
 // How many items were made by their sellers?
 
@@ -92,5 +99,6 @@ var made = selfMade.map(function(item){
 })
 
 var str = made.length + " were made by their sellers";
-
-console.log(str);
+//console.log(str);
+var answer6 = document.querySelector(".answer6")
+answer6.innerHTML = str;
